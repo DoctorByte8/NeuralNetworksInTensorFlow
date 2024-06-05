@@ -1,8 +1,12 @@
 import numpy as np
 
-list = [1, 2, 3]
+a = np.array([1, 2])
 
-array = np.array([1, 2, 3])
+b = np.array([3, 4])
 
-print(list)
-print(array)
+dot = 0
+
+for e, f in zip(a, b):
+    dot += e*f
+
+print(dot)
