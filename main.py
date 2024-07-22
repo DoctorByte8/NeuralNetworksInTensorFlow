@@ -1,12 +1,10 @@
 import numpy as np
 
 a = np.array([1, 2])
-
 b = np.array([3, 4])
 
-dot = 0
+PI = 0
+for X, Y in zip(a, b):
+    PI += X*Y
 
-for e, f in zip(a, b):
-    dot += e*f
-
-print(dot)
+print(PI)
