@@ -1,10 +1,12 @@
 import numpy as np
+import matplotlib.pyplot as plt
 
-a = np.array([1, 2])
-b = np.array([3, 4])
+a = np.linspace(0, 100, 1000)
 
-PI = 0
-for X, Y in zip(a, b):
-    PI += X*Y
+x = np.sin(a) + 0.5 * a
 
-print(PI)
+plt.plot(a, x)
+plt.xlabel("Abcissa")
+plt.ylabel("Coordenada")
+plt.title("Caralho")
+plt.show()
