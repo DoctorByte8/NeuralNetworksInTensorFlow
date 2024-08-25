@@ -1,12 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-a = np.linspace(0, 100, 1000)
+x = np.random.random(10000)
 
-x = np.sin(a) + 0.5 * a
+plt.scatter(x[:5000], x[5001:])
 
-plt.plot(a, x)
-plt.xlabel("Abcissa")
-plt.ylabel("Coordenada")
-plt.title("Caralho")
 plt.show()
