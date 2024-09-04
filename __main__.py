@@ -1,11 +1,8 @@
-import pandas as pd
+from sklearn import datasets
+import numpy as np
 
-# https://raw.githubusercontent.com/lazyprogrammer/machine_learning_examples/master/tf2.0/sbux.csv
+print("\n\n")
 
+data = datasets.load_iris()
 
-def main():
-    dwdw
-
-
-if __name__=='__main__':
-    main()
+print(data.feature_names)
